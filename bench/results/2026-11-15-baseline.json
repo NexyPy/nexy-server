@@ -1,0 +1,354 @@
+{
+  "meta": {
+    "date": "2026-11-15",
+    "cpu": "AMD Ryzen 5 4500U with Radeon Graphics, 6 logical cores",
+    "system": "Linux 7.0.0-43-generic",
+    "python": "CPython 3.13.15",
+    "versions": "nexy 2.3.0, fastapi 0.163.0, starlette 1.10.0, uvicorn 0.54.0, pydantic 2.14.3, uvloop 0.23.0, httptools 0.9.0",
+    "label": "baseline",
+    "server cpus": "0-3",
+    "client cpus": "4-5",
+    "connections": 64,
+    "seconds": 8,
+    "workers": 4,
+    "hottest cpu after the run": "100 C"
+  },
+  "rows": [
+    {
+      "stack": "rust",
+      "scenario": "plaintext",
+      "rps": 126775.17103542357,
+      "p50_ms": 0.427989,
+      "p99_ms": 2.723379,
+      "success": 1.0,
+      "statuses": {
+        "200": 1014584
+      },
+      "failures": 0,
+      "rss_idle_mib": 4.375,
+      "rss_peak_mib": 5.2109375
+    },
+    {
+      "stack": "rust",
+      "scenario": "json",
+      "rps": 110096.48802878,
+      "p50_ms": 0.45515,
+      "p99_ms": 3.307594,
+      "success": 1.0,
+      "statuses": {
+        "200": 881240
+      },
+      "failures": 0,
+      "rss_idle_mib": 5.18359375,
+      "rss_peak_mib": 5.78515625
+    },
+    {
+      "stack": "asgi",
+      "scenario": "plaintext",
+      "rps": 59721.13629242888,
+      "p50_ms": 0.720813,
+      "p99_ms": 4.767544,
+      "success": 1.0,
+      "statuses": {
+        "200": 477899
+      },
+      "failures": 0,
+      "rss_idle_mib": 203.78515625,
+      "rss_peak_mib": 204.06640625
+    },
+    {
+      "stack": "asgi",
+      "scenario": "json",
+      "rps": 53173.34019983043,
+      "p50_ms": 0.877208,
+      "p99_ms": 5.037314,
+      "success": 1.0,
+      "statuses": {
+        "200": 425435
+      },
+      "failures": 0,
+      "rss_idle_mib": 204.25,
+      "rss_peak_mib": 204.390625
+    },
+    {
+      "stack": "asgi",
+      "scenario": "query",
+      "rps": 36787.98578920003,
+      "p50_ms": 1.210569,
+      "p99_ms": 6.572056,
+      "success": 1.0,
+      "statuses": {
+        "200": 294346
+      },
+      "failures": 0,
+      "rss_idle_mib": 206.09765625,
+      "rss_peak_mib": 206.1171875
+    },
+    {
+      "stack": "asgi",
+      "scenario": "validate",
+      "rps": 49974.12107820862,
+      "p50_ms": 0.90963,
+      "p99_ms": 4.858846,
+      "success": 1.0,
+      "statuses": {
+        "200": 399850
+      },
+      "failures": 0,
+      "rss_idle_mib": 207.6171875,
+      "rss_peak_mib": 207.7109375
+    },
+    {
+      "stack": "starlette",
+      "scenario": "plaintext",
+      "rps": 34300.31616866775,
+      "p50_ms": 1.117382,
+      "p99_ms": 7.766655,
+      "success": 1.0,
+      "statuses": {
+        "200": 274493
+      },
+      "failures": 0,
+      "rss_idle_mib": 218.41796875,
+      "rss_peak_mib": 218.6640625
+    },
+    {
+      "stack": "starlette",
+      "scenario": "json",
+      "rps": 48728.75401019516,
+      "p50_ms": 1.12124,
+      "p99_ms": 4.239105,
+      "success": 1.0,
+      "statuses": {
+        "200": 389968
+      },
+      "failures": 0,
+      "rss_idle_mib": 218.71875,
+      "rss_peak_mib": 218.8203125
+    },
+    {
+      "stack": "starlette",
+      "scenario": "query",
+      "rps": 14101.719999356585,
+      "p50_ms": 4.024138,
+      "p99_ms": 12.045454000000001,
+      "success": 1.0,
+      "statuses": {
+        "200": 112799
+      },
+      "failures": 0,
+      "rss_idle_mib": 240.03515625,
+      "rss_peak_mib": 245.35546875
+    },
+    {
+      "stack": "starlette",
+      "scenario": "validate",
+      "rps": 33156.70149192716,
+      "p50_ms": 1.5255640000000001,
+      "p99_ms": 6.136412,
+      "success": 1.0,
+      "statuses": {
+        "200": 265412
+      },
+      "failures": 0,
+      "rss_idle_mib": 246.7265625,
+      "rss_peak_mib": 246.7421875
+    },
+    {
+      "stack": "starlette",
+      "scenario": "page",
+      "rps": 29375.69895492549,
+      "p50_ms": 1.932565,
+      "p99_ms": 5.840663,
+      "success": 1.0,
+      "statuses": {
+        "200": 235134
+      },
+      "failures": 0,
+      "rss_idle_mib": 247.1484375,
+      "rss_peak_mib": 247.16015625
+    },
+    {
+      "stack": "starlette",
+      "scenario": "static",
+      "rps": 3653.21900560547,
+      "p50_ms": 16.530354,
+      "p99_ms": 35.675021,
+      "success": 1.0,
+      "statuses": {
+        "200": 29172
+      },
+      "failures": 0,
+      "rss_idle_mib": 255.5859375,
+      "rss_peak_mib": 259.3671875
+    },
+    {
+      "stack": "fastapi",
+      "scenario": "plaintext",
+      "rps": 25369.68200909849,
+      "p50_ms": 2.264241,
+      "p99_ms": 6.617461,
+      "success": 1.0,
+      "statuses": {
+        "200": 202964
+      },
+      "failures": 0,
+      "rss_idle_mib": 247.90625,
+      "rss_peak_mib": 248.49609375
+    },
+    {
+      "stack": "fastapi",
+      "scenario": "json",
+      "rps": 24375.677506938904,
+      "p50_ms": 2.234114,
+      "p99_ms": 7.134039,
+      "success": 1.0,
+      "statuses": {
+        "200": 195032
+      },
+      "failures": 0,
+      "rss_idle_mib": 248.59765625,
+      "rss_peak_mib": 248.69140625
+    },
+    {
+      "stack": "fastapi",
+      "scenario": "query",
+      "rps": 8868.25104476048,
+      "p50_ms": 6.246581,
+      "p99_ms": 18.621817999999998,
+      "success": 1.0,
+      "statuses": {
+        "200": 70931
+      },
+      "failures": 0,
+      "rss_idle_mib": 268.875,
+      "rss_peak_mib": 271.734375
+    },
+    {
+      "stack": "fastapi",
+      "scenario": "validate",
+      "rps": 14102.493677033695,
+      "p50_ms": 3.927155,
+      "p99_ms": 11.323319,
+      "success": 1.0,
+      "statuses": {
+        "200": 112799
+      },
+      "failures": 0,
+      "rss_idle_mib": 271.9375,
+      "rss_peak_mib": 272.0078125
+    },
+    {
+      "stack": "fastapi",
+      "scenario": "page",
+      "rps": 16286.793335731283,
+      "p50_ms": 3.046149,
+      "p99_ms": 12.454778999999998,
+      "success": 1.0,
+      "statuses": {
+        "200": 130292
+      },
+      "failures": 0,
+      "rss_idle_mib": 272.15625,
+      "rss_peak_mib": 272.16015625
+    },
+    {
+      "stack": "fastapi",
+      "scenario": "static",
+      "rps": 2886.687770975127,
+      "p50_ms": 19.676793,
+      "p99_ms": 54.054972,
+      "success": 1.0,
+      "statuses": {
+        "200": 23044
+      },
+      "failures": 0,
+      "rss_idle_mib": 280.73828125,
+      "rss_peak_mib": 280.73828125
+    },
+    {
+      "stack": "nexy",
+      "scenario": "plaintext",
+      "rps": 6083.527889473556,
+      "p50_ms": 8.779058,
+      "p99_ms": 28.421807,
+      "success": 1.0,
+      "statuses": {
+        "200": 48625
+      },
+      "failures": 0,
+      "rss_idle_mib": 368.5859375,
+      "rss_peak_mib": 368.67578125
+    },
+    {
+      "stack": "nexy",
+      "scenario": "json",
+      "rps": 6002.286281790696,
+      "p50_ms": 9.818514,
+      "p99_ms": 25.844545,
+      "success": 1.0,
+      "statuses": {
+        "200": 47972
+      },
+      "failures": 0,
+      "rss_idle_mib": 368.69921875,
+      "rss_peak_mib": 368.8125
+    },
+    {
+      "stack": "nexy",
+      "scenario": "query",
+      "rps": 2944.4906706449874,
+      "p50_ms": 17.712569000000002,
+      "p99_ms": 63.026796,
+      "success": 1.0,
+      "statuses": {
+        "200": 23505
+      },
+      "failures": 0,
+      "rss_idle_mib": 389.38671875,
+      "rss_peak_mib": 397.69921875
+    },
+    {
+      "stack": "nexy",
+      "scenario": "validate",
+      "rps": 3831.3313238694777,
+      "p50_ms": 15.014527999999999,
+      "p99_ms": 42.611365,
+      "success": 1.0,
+      "statuses": {
+        "200": 30603
+      },
+      "failures": 0,
+      "rss_idle_mib": 397.84765625,
+      "rss_peak_mib": 397.84765625
+    },
+    {
+      "stack": "nexy",
+      "scenario": "page",
+      "rps": 2571.6528662327987,
+      "p50_ms": 20.699377000000002,
+      "p99_ms": 73.747054,
+      "success": 1.0,
+      "statuses": {
+        "200": 20535
+      },
+      "failures": 0,
+      "rss_idle_mib": 399.7265625,
+      "rss_peak_mib": 401.34375
+    },
+    {
+      "stack": "nexy",
+      "scenario": "static",
+      "rps": 1784.262796166119,
+      "p50_ms": 32.629813,
+      "p99_ms": 76.261278,
+      "success": 1.0,
+      "statuses": {
+        "200": 14218
+      },
+      "failures": 0,
+      "rss_idle_mib": 388.54296875,
+      "rss_peak_mib": 398.74609375
+    }
+  ]
+}
