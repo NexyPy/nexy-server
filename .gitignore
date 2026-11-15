@@ -6,3 +6,7 @@ dist/
 *.so
 *.pyd
 .env
+bench/.venv/
+bench/apps/bench.sqlite3
+bench/apps/nexy_app/__nexy__/
+bench/reference/target/

@@ -1,0 +1,29 @@
+[project]
+name = "nexy-server-bench"
+version = "0.1.0"
+description = "The baseline of Nexy on uvicorn, Starlette and FastAPI, and the ceiling of the machine"
+requires-python = ">=3.12"
+dependencies = [
+    # The released Nexy is the baseline; bump it with each Nexy release.
+    "nexy==2.3.0",
+    "fastapi",
+    "starlette",
+    "uvicorn",
+    "httptools",
+    "uvloop; sys_platform != 'win32'",
+    "jinja2",
+    "pydantic",
+]
+
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[tool.uv]
+package = false
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

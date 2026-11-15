@@ -1,0 +1,7 @@
+---
+greeting: prop[str] = "Hello Nexy!"
+---
+<section>
+    <h1>{{ greeting | upper }}</h1>
+    <p>A server-rendered page with a layout.</p>
+</section>
