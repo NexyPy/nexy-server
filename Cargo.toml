@@ -1,0 +1,18 @@
+[package]
+name = "nexy-server"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+description = "The HTTP server and API layer of Nexy, written in Rust"
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/NexyPy/nexy-server"
+documentation = "https://docs.rs/nexy-server"
+keywords = ["nexy", "http", "server", "asgi", "web"]
+categories = ["web-programming::http-server"]
+authors = ["Espoir LOEMBA"]
+exclude = ["bench/"]
+[lib]
+path = "src/lib.rs"
+
+[dependencies]
