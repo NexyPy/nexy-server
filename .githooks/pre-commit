@@ -1,0 +1,11 @@
+#!/bin/sh
+# Check the staged files before the commit is created.
+set -e
+ROOT=$(git rev-parse --show-toplevel)
+PY=$(command -v python3 || command -v python) || exit 0
+
+cd "$ROOT"
+"$PY" scripts/check_human_characters.py --staged
+cargo fmt --all -- --check
+cargo clippy --all-targets --locked -- -D warnings
+cargo test --all-targets --locked
