@@ -40,7 +40,16 @@ python3 scripts/check_human_characters.py
 python3 scripts/check_release_setup.py --publish-command 'cargo publish --locked'
 ```
 
-Add language gates here when the first code lands.
+Run the full gate set from the root before a commit.
+
+```bash
+python3 scripts/verify.py
+```
+
+This runs `cargo fmt --check`, `cargo clippy --all-targets -- -D warnings`,
+`cargo test --all-targets --locked`, `cargo build --release --locked`, the character check, the
+release setup check and the commit attribution check. The dependency audit and the crate packaging
+run in CI against the frozen lock.
 
 ## Releases
 
