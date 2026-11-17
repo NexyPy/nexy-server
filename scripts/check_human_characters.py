@@ -23,7 +23,7 @@ FORBIDDEN = frozenset(
 )
 
 TEXT_SUFFIXES = frozenset(
-    {".md", ".py", ".toml", ".ts", ".json", ".yml", ".yaml", ".txt", ".sh", ".lock"}
+    {".md", ".py", ".rs", ".toml", ".ts", ".json", ".yml", ".yaml", ".txt", ".sh", ".lock"}
 )
 TEXT_NAMES = frozenset({".gitignore", ".python-version"})
 
